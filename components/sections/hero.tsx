@@ -38,12 +38,6 @@ export default function Hero() {
     },
   };
 
-  const buttonVariants = {
-    rest: { scale: 1 },
-    hover: { scale: 1.05 },
-    pressed: { scale: 0.95 },
-  };
-
   return (
     <section
       id="home"
@@ -114,9 +108,7 @@ export default function Hero() {
               <Button
                 asChild
                 size="lg"
-                variants={buttonVariants}
-                whileHover="hover"
-                whileTap="pressed"
+                variant="outline"
                 className="text-base md:text-lg font-semibold px-8 py-6 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 shadow-lg hover:shadow-purple-500/20 relative"
               >
                 <a href="#waitlist">
